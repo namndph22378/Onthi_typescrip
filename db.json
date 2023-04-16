@@ -1,0 +1,85 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Chuột không dây",
+      "price": 200000,
+      "original_price": 180000,
+      "brand": "SamSung",
+      "description": "Đây là một trong những sản phẩm chất lượng, phù hợp với thị trường",
+      "originId": 1,
+      "images": "https://danviet.mediacdn.vn/upload/2-2019/images/2019-06-25/3-1561430885-width660height440.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Chuột  dây",
+      "price": 200000,
+      "original_price": 180000,
+      "brand": "SamSung",
+      "description": "Đây là một trong những sản phẩm chất lượng, phù hợp với thị trường",
+      "originId": 1,
+      "images": "https://danviet.mediacdn.vn/upload/2-2019/images/2019-06-25/3-1561430885-width660height440.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Chuột  dây",
+      "price": 200000,
+      "original_price": 180000,
+      "brand": "SamSung",
+      "description": "Đây là một trong những sản phẩm chất lượng, phù hợp với thị trường",
+      "originId": 1,
+      "images": "https://danviet.mediacdn.vn/upload/2-2019/images/2019-06-25/3-1561430885-width660height440.jpg"
+    }
+  ],
+  "origins": [
+    {
+      "id": 1,
+      "name": "Việt Nam"
+    },
+    {
+      "id": 2,
+      "name": "Trung Quốc"
+    },
+    {
+      "id": 3,
+      "name": "Pháp"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Hao8386",
+      "email": "hao8386@gmail.com",
+      "password": "123456",
+      "role": "member"
+    },
+    {
+      "id": 2,
+      "name": "Hao888",
+      "email": "hao888@gmail.com",
+      "password": "123456",
+      "role": "admin"
+    },
+    {
+      "email": "hao@gmail.com",
+      "password": "$2a$10$Of9Lt2oNMO50Vb2yYGyLq.kGqMiFvIefBC.oPSRvEjlpIwgY8/0cO",
+      "name": "Chu Quang Hào",
+      "confinm_password": "123456",
+      "id": 3
+    },
+    {
+      "email": "chuhao878@gmail.com",
+      "password": "$2a$10$CJnNtLc3dyriy65Ae.k4POAMfAcmooZ/N1VkzVmpf3VdtaL0jNWZ.",
+      "name": "Chu Quang Hào 1",
+      "confinm_password": "123456",
+      "id": 4
+    },
+    {
+      "email": "abc@gmail.com",
+      "password": "$2a$10$/der1gyZlSXeANlJUgUVdesJCzgDdevg/AWuiJfkQlQdowG1hlZDu",
+      "name": "Dịch vụ ăn uống",
+      "confinm_password": "123456",
+      "id": 5
+    }
+  ]
+}
