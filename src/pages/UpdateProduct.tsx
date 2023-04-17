@@ -1,15 +1,11 @@
 import { useForm } from "react-hook-form";
 import { iProduct } from "../models";
-import { createProduct, getDetail, updateProduct } from "../api/product";
+import { getDetail, updateProduct } from "../api/product";
 import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 const UpdateProduct = () => {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm<iProduct>();
+  const {register,handleSubmit,formState: { errors }} = useForm<iProduct>();
   const navigate = useNavigate();
   const { id }: any = useParams();
   const [data, setData] = useState<iProduct>({} as iProduct);
@@ -33,9 +29,7 @@ const UpdateProduct = () => {
   });
 
   return (
-    <form
-      action=""
-      className="w-[1200px] mx-auto p-4"
+    <form className="w-[1200px] mx-auto p-4"
       onSubmit={handleSubmit(handleOnSubmit)}
     >
       <div className="flex flex-col items-center">

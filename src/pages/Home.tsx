@@ -6,7 +6,6 @@ import Product from "../components/Product";
 
 const Home = () => {
   const [products, setProducts] = useState<iProduct[]>([]);
-  const [searchValue, setSearchValue] = useState("");
 
   const fetchProducts = async () => {
     try {
@@ -17,20 +16,6 @@ const Home = () => {
     }
   };
 
-  const handleSearch = () => {
-    const dataSearch: any = products.filter((item) =>
-      item.name.toLowerCase().includes(searchValue.toLowerCase())
-    );
-    setProducts(dataSearch);
-  };
-
-  const handleChange = (data: string) => {
-    if (data == "") {
-      fetchProducts();
-    }
-    setSearchValue(data);
-  };
-
   useEffect(() => {
     fetchProducts();
   }, []);
@@ -38,15 +23,7 @@ const Home = () => {
     <>
       <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a href="https://flowbite.com/" className="flex items-center">
-            <img
-              src="https://flowbite.com/docs/images/logo.svg"
-              className="h-8 mr-3"
-              alt="Flowbite Logo"
-            />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-              Flowbite
-            </span>
+          <a className="flex items-center">
           </a>
           <div className="flex gap-2 md:order-2">
             <Link
@@ -104,13 +81,7 @@ const Home = () => {
           </div>
         </div>
       </nav>
-      <div className="w-full mt-18">
-        <img
-          className="w-full h-[500px] object-cover"
-          src="https://daotaodigitalmarketing.vn/wp-content/uploads/2021/09/cong-cu-tao-banner-shopee.jpg"
-          alt=""
-        />
-      </div>
+
       <div className="w-[1200px] mx-auto mb-10">
         <h1 className="text-center uppercase py-8 text-2xl text-black font-bold">
           Sản phẩm nổi bật nhất
@@ -120,11 +91,11 @@ const Home = () => {
             className="p-2 border-2 border-gray-200 rounded-xl"
             type="text"
             placeholder="search..."
-            onChange={(e) => handleChange(e.target.value)}
+            // onChange={(e) => handleChange(e.target.value)}
           />
           <button
             className="p-2 bg-blue-700 text-white rounded-xl"
-            onClick={handleSearch}
+            // onClick={handleSearch}
           >
             Search
           </button>

@@ -12,17 +12,7 @@
     },
     {
       "id": 2,
-      "name": "Chuột  dây",
-      "price": 200000,
-      "original_price": 180000,
-      "brand": "SamSung",
-      "description": "Đây là một trong những sản phẩm chất lượng, phù hợp với thị trường",
-      "originId": 1,
-      "images": "https://danviet.mediacdn.vn/upload/2-2019/images/2019-06-25/3-1561430885-width660height440.jpg"
-    },
-    {
-      "id": 3,
-      "name": "Chuột  dây",
+      "name": "Nam",
       "price": 200000,
       "original_price": 180000,
       "brand": "SamSung",

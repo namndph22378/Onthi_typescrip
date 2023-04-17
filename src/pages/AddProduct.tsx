@@ -28,7 +28,7 @@ const AddProduct = () => {
           type="text"
           placeholder="name"
           className="p-2 border-2 border-gray-200 rounded"
-          {...register("name")}
+          {...register("name")}required
         />
       </div>
       <div className="flex flex-col items-center">
@@ -37,7 +37,7 @@ const AddProduct = () => {
           type="number"
           className="p-2 border-2 border-gray-200 rounded"
           placeholder="123"
-          {...register("price")}
+          {...register("price")}required
         />
       </div>
       <div className="flex flex-col items-center">
@@ -46,7 +46,7 @@ const AddProduct = () => {
           type="number"
           placeholder="123"
           className="p-2 border-2 border-gray-200 rounded"
-          {...register("original_price")}
+          {...register("original_price")}required
         />
       </div>
       <div className="flex flex-col items-center">
@@ -55,7 +55,7 @@ const AddProduct = () => {
           type="text"
           className="p-2 border-2 border-gray-200 rounded"
           placeholder="apple,.."
-          {...register("brand")}
+          {...register("brand")}required
         />
       </div>
       <div className="flex flex-col items-center">
@@ -75,7 +75,7 @@ const AddProduct = () => {
           className="p-2 border-2 border-gray-200 rounded"
           rows={4}
           placeholder="description"
-          {...register("description")}
+          {...register("description")}required
         />
       </div>
       <div className="flex flex-col items-center">

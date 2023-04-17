@@ -1,15 +1,9 @@
 import { useForm } from "react-hook-form";
-import { login, registerUser } from "../api/auth";
-import { useNavigate } from "react-router-dom";
+
 
 const Login = () => {
-  const { register, handleSubmit } = useForm();
-  const navigate = useNavigate();
-
-  const handleLogin = async (data: any) => {
-    await login(data);
-    navigate("/");
-  };
+  const { register } = useForm();
+ 
   return (
     <section className="bg-white">
       <div className="lg:grid lg:min-h-screen lg:grid-cols-12">
@@ -84,7 +78,7 @@ const Login = () => {
             <form
               action="#"
               className="mt-8 grid grid-cols-6 gap-6"
-              onSubmit={handleSubmit(handleLogin)}
+            
             >
               <div className="col-span-6">
                 <label
